@@ -52,7 +52,7 @@ class GameScene: SKScene {
         self.physicsWorld.contactDelegate = self
         
         self.physicsBody?.categoryBitMask = CollusionCategories.EdgeBody
-        self.physicsBody?.categoryBitMask = CollusionCategories.Snake | CollusionCategories.SnakeHead
+        self.physicsBody?.collisionBitMask = CollusionCategories.Snake | CollusionCategories.SnakeHead
         
     }
     
